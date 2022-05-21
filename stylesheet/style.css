@@ -120,6 +120,7 @@ header .wrapper-nav-content__header {
   justify-content: space-between;
 }
 header .search-store__header {
+  margin-right: 30%;
   display: flex;
 }
 header .search-store__header img {
