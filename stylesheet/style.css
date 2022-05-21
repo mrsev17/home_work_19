@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  text-rendering: optimizespeed;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Указываем понятную периодичность в потоке данных у article */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+@font-face {
+  font-family: "Circular Std";
+  src: local("CircularStd-Bold"), url("../../fonts/CircularStd-Bold.woff2") format("woff2"), url("../../fonts/CircularStd-Bold.woff") format("woff"), url("../../fonts/CircularStd-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/* === Common styles === */
+body {
+  font-family: "CircularStd", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-width: 1140px;
+  padding: 0 55px;
+}
+
+body {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+header {
+  margin-top: 50px;
+}
+header .wrapper-nav-content__header {
+  display: flex;
+  justify-content: space-between;
+}
+header .search-store__header {
+  display: flex;
+}
+header .search-store__header img {
+  margin: 2px 20px 0 0;
+}
+header .search-store__header #search {
+  opacity: 0.7;
+  border: none;
+}
+header .search-store__header #search:focus {
+  outline: none;
+}
+header ul {
+  display: flex;
+  gap: 42px;
+}
+header li:hover {
+  border-bottom: 2px solid #000000;
+}
+header .last-icon__header {
+  margin-left: -12px;
+}
+
+/*# sourceMappingURL=style.css.map */

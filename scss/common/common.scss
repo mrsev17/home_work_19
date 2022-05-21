@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Circular Std';
+  src: local('CircularStd-Bold'),
+  url('../../fonts/CircularStd-Bold.woff2') format('woff2'),
+  url('../../fonts/CircularStd-Bold.woff') format('woff'),
+  url('../../fonts/CircularStd-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Common styles === */
+body {
+  font-family: "CircularStd", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-width: 1140px;
+  padding: 0 55px;
+}
