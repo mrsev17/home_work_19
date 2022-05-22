@@ -1,0 +1,153 @@
+@media (max-width: 1400px) {
+  header {
+    .search-store__header {
+      margin-right: 10%;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  header {
+    .search-store__header {
+      margin-right: 5%;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  header {
+    .search-store__header {
+      margin-right: 0;
+    }
+  }
+}
+
+
+
+
+@media (max-width: 950px) {
+  header {
+    .container {
+      max-width: 950px;
+      .wrapper-nav-content__header {
+        flex-direction: column;
+      }
+      .logo__header img {
+        width: 100%;
+        max-width: 120px;
+        max-height: 120px;
+      }
+      .search-store__header img {
+          margin: 10px 10px 0 0;
+          width: 100%;
+          min-width: 20px;
+          min-height: 20px;
+      }
+      #search {
+        margin-left: 10px;
+        font-size: 30px;
+      }
+    }
+    ul {
+      gap: 5px;
+      flex-direction: column;
+      li a {
+        font-size: 30px;
+      }
+    }
+    .last-icon__header {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  header {
+    margin-top: 20px;
+    .container {
+      max-width: 640px;
+      padding: 0 20px;
+      .wrapper-nav-content__header {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .logo__header img {
+        width: 100%;
+        max-width: 120px;
+        max-height: 120px;
+      }
+      .search-store__header {
+        margin: 15px 0;
+        img {
+          margin: 10px 10px 0 0;
+          width: 100%;
+          min-width: 20px;
+          min-height: 20px;
+        }
+        #search {
+          font-size: 30px;
+        }
+      }
+      ul {
+        flex-direction: column;
+      }
+      a {
+        font-size: 30px;
+      }
+      .last-icon__header {
+        margin-left: 0;
+      }
+      .navigation__header nav ul li a img {
+        width: 100%;
+        max-width: 50px;
+        max-height: 50px;
+        margin: 0 50px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    margin-top: 20px;
+    .container {
+      max-width: 400px;
+      .wrapper-nav-content__header {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .logo__header img {
+        width: 100%;
+        max-width: 120px;
+        max-height: 120px;
+      }
+      .search-store__header {
+        margin: 15px 0;
+        img {
+          margin: 10px 10px 0 0;
+          width: 100%;
+          min-width: 20px;
+          min-height: 20px;
+        }
+        #search {
+          font-size: 30px;
+        }
+      }
+      ul {
+        flex-direction: column;
+      }
+      a {
+        font-size: 30px;
+      }
+      .last-icon__header {
+        margin-left: 0;
+      }
+      .navigation__header nav ul li a img {
+        width: 100%;
+        max-width: 50px;
+        max-height: 50px;
+        margin: 0 50px 0;
+      }
+    }
+  }
+}

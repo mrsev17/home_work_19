@@ -103,7 +103,7 @@ body {
 
 .container {
   width: 100%;
-  min-width: 1140px;
+  max-width: 1140px;
   padding: 0 55px;
 }
 
@@ -118,9 +118,10 @@ header {
 header .wrapper-nav-content__header {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
 }
 header .search-store__header {
-  margin-right: 30%;
+  margin-right: 15%;
   display: flex;
 }
 header .search-store__header img {
@@ -139,12 +140,150 @@ header ul {
   display: flex;
   gap: 42px;
 }
-header li:hover {
+header ul a:hover {
   border-bottom: 2px solid #000000;
   transition: 0.3s;
 }
 header .last-icon__header {
   margin-left: -12px;
+}
+
+@media (max-width: 1400px) {
+  header .search-store__header {
+    margin-right: 10%;
+  }
+}
+@media (max-width: 1250px) {
+  header .search-store__header {
+    margin-right: 5%;
+  }
+}
+@media (max-width: 1150px) {
+  header .search-store__header {
+    margin-right: 0;
+  }
+}
+@media (max-width: 950px) {
+  header .container {
+    max-width: 950px;
+  }
+  header .container .wrapper-nav-content__header {
+    flex-direction: column;
+  }
+  header .container .logo__header img {
+    width: 100%;
+    max-width: 120px;
+    max-height: 120px;
+  }
+  header .container .search-store__header img {
+    margin: 10px 10px 0 0;
+    width: 100%;
+    min-width: 20px;
+    min-height: 20px;
+  }
+  header .container #search {
+    margin-left: 10px;
+    font-size: 30px;
+  }
+  header ul {
+    gap: 5px;
+    flex-direction: column;
+  }
+  header ul li a {
+    font-size: 30px;
+  }
+  header .last-icon__header {
+    margin: 0;
+  }
+}
+@media (max-width: 640px) {
+  header {
+    margin-top: 20px;
+  }
+  header .container {
+    max-width: 640px;
+    padding: 0 20px;
+  }
+  header .container .wrapper-nav-content__header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  header .container .logo__header img {
+    width: 100%;
+    max-width: 120px;
+    max-height: 120px;
+  }
+  header .container .search-store__header {
+    margin: 15px 0;
+  }
+  header .container .search-store__header img {
+    margin: 10px 10px 0 0;
+    width: 100%;
+    min-width: 20px;
+    min-height: 20px;
+  }
+  header .container .search-store__header #search {
+    font-size: 30px;
+  }
+  header .container ul {
+    flex-direction: column;
+  }
+  header .container a {
+    font-size: 30px;
+  }
+  header .container .last-icon__header {
+    margin-left: 0;
+  }
+  header .container .navigation__header nav ul li a img {
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 50px 0;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    margin-top: 20px;
+  }
+  header .container {
+    max-width: 400px;
+  }
+  header .container .wrapper-nav-content__header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  header .container .logo__header img {
+    width: 100%;
+    max-width: 120px;
+    max-height: 120px;
+  }
+  header .container .search-store__header {
+    margin: 15px 0;
+  }
+  header .container .search-store__header img {
+    margin: 10px 10px 0 0;
+    width: 100%;
+    min-width: 20px;
+    min-height: 20px;
+  }
+  header .container .search-store__header #search {
+    font-size: 30px;
+  }
+  header .container ul {
+    flex-direction: column;
+  }
+  header .container a {
+    font-size: 30px;
+  }
+  header .container .last-icon__header {
+    margin-left: 0;
+  }
+  header .container .navigation__header nav ul li a img {
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 50px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
