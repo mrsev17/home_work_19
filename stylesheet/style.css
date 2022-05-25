@@ -99,19 +99,58 @@ select {
 /* === Common styles === */
 body {
   font-family: "CircularStd", sans-serif;
-}
-
-.container {
-  width: 100%;
-  max-width: 1140px;
-  padding: 0 55px;
-}
-
-body {
   font-size: 17px;
   font-weight: bold;
 }
 
+.container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 55px;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+@media (max-width: 1150px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+@media (max-width: 950px) {
+  .container {
+    max-width: 950px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    max-width: 640px;
+    padding: 0 40px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
+    padding: 0 10px;
+  }
+}
 header {
   margin-top: 50px;
 }
@@ -164,125 +203,122 @@ header .last-icon__header {
   }
 }
 @media (max-width: 950px) {
-  header .container {
-    max-width: 950px;
-  }
-  header .container .wrapper-nav-content__header {
-    flex-direction: column;
-  }
-  header .container .logo__header img {
+  header .logo__header img {
     width: 100%;
     max-width: 120px;
     max-height: 120px;
   }
-  header .container .search-store__header img {
+  header .search-store__header img {
     margin: 10px 10px 0 0;
     width: 100%;
     min-width: 20px;
     min-height: 20px;
   }
-  header .container #search {
+  header #search {
     margin-left: 10px;
     font-size: 30px;
   }
-  header ul {
-    gap: 5px;
-    flex-direction: column;
-  }
-  header ul li a {
+
+  ul li a {
     font-size: 30px;
   }
-  header .last-icon__header {
+
+  .last-icon__header {
     margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  header .search-store__header #search {
+    margin: 0 auto;
+  }
+
+  .search-store__header figure svg {
+    margin-top: 10px;
+  }
+
+  .menu-link {
+    display: none;
+  }
+
+  header .last-icon__header {
+    margin-left: 0;
   }
 }
 @media (max-width: 640px) {
   header {
     margin-top: 20px;
   }
-  header .container {
-    max-width: 640px;
-    padding: 0 20px;
+  header .wrapper-nav-content__header {
+    gap: 0;
   }
-  header .container .wrapper-nav-content__header {
-    flex-direction: column;
-    gap: 20px;
+  header header ul {
+    gap: 0;
   }
-  header .container .logo__header img {
-    width: 100%;
-    max-width: 120px;
-    max-height: 120px;
+  header .logo__header svg {
+    margin-top: 15px;
   }
-  header .container .search-store__header {
-    margin: 15px 0;
+  header .search-store__header {
+    margin: 15px 0 0 20px;
   }
-  header .container .search-store__header img {
-    margin: 10px 10px 0 0;
-    width: 100%;
-    min-width: 20px;
-    min-height: 20px;
-  }
-  header .container .search-store__header #search {
+  header .search-store__header #search {
     font-size: 30px;
   }
-  header .container ul {
-    flex-direction: column;
-  }
-  header .container a {
+  header a {
     font-size: 30px;
   }
-  header .container .last-icon__header {
+  header .last-icon__header {
     margin-left: 0;
   }
-  header .container .navigation__header nav ul li a img {
-    width: 100%;
-    max-width: 50px;
-    max-height: 50px;
-    margin: 0 50px 0;
+
+  header ul {
+    gap: 5px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 400px) {
   header {
     margin-top: 20px;
   }
-  header .container {
-    max-width: 400px;
+  header .wrapper-nav-content__header {
+    gap: 10px;
   }
-  header .container .wrapper-nav-content__header {
-    flex-direction: column;
-    gap: 20px;
-  }
-  header .container .logo__header img {
+  header .logo__header img {
     width: 100%;
     max-width: 120px;
     max-height: 120px;
   }
-  header .container .search-store__header {
+  header .search-store__header {
     margin: 15px 0;
   }
-  header .container .search-store__header img {
+  header .search-store__header img {
     margin: 10px 10px 0 0;
     width: 100%;
     min-width: 20px;
     min-height: 20px;
   }
-  header .container .search-store__header #search {
+  header .search-store__header #search {
+    margin-top: 10px;
+    font-size: 17px;
+    width: 100%;
+    max-width: 180px;
+  }
+  header a {
     font-size: 30px;
   }
-  header .container ul {
-    flex-direction: column;
-  }
-  header .container a {
-    font-size: 30px;
-  }
-  header .container .last-icon__header {
+  header .last-icon__header {
     margin-left: 0;
   }
-  header .container .navigation__header nav ul li a img {
+  header .navigation__header nav ul li a img {
     width: 100%;
     max-width: 50px;
     max-height: 50px;
     margin: 0 50px 0;
+  }
+}
+@media (max-width: 320px) {
+  header .wrapper-nav-content__header .search-store__header #search {
+    font-size: 15px;
+    margin-top: 12px;
   }
 }
 

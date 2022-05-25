@@ -22,16 +22,8 @@
   }
 }
 
-
-
-
 @media (max-width: 950px) {
   header {
-    .container {
-      max-width: 950px;
-      .wrapper-nav-content__header {
-        flex-direction: column;
-      }
       .logo__header img {
         width: 100%;
         max-width: 120px;
@@ -49,8 +41,6 @@
       }
     }
     ul {
-      gap: 5px;
-      flex-direction: column;
       li a {
         font-size: 30px;
       }
@@ -59,18 +49,59 @@
       margin: 0;
     }
   }
+
+@media (max-width: 767px) {
+  header .search-store__header #search {
+    margin: 0 auto;
+  }
+  .search-store__header figure svg {
+    margin-top: 10px;
+  }
+  .menu-link {
+    display: none;
+  }
+  header .last-icon__header {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 640px) {
   header {
     margin-top: 20px;
-    .container {
-      max-width: 640px;
-      padding: 0 20px;
-      .wrapper-nav-content__header {
-        flex-direction: column;
-        gap: 20px;
+    .wrapper-nav-content__header {
+      gap: 0;
+    }
+    header ul {
+      gap: 0;
+    }
+      .logo__header svg {
+        margin-top: 15px;
       }
+      .search-store__header {
+        margin: 15px 0 0 20px;
+        #search {
+          font-size: 30px;
+        }
+      }
+      a {
+        font-size: 30px;
+      }
+      .last-icon__header {
+        margin-left: 0;
+      }
+    }
+  header ul {
+    gap: 5px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    margin-top: 20px;
+    .wrapper-nav-content__header {
+      gap: 10px;
+    }
       .logo__header img {
         width: 100%;
         max-width: 120px;
@@ -85,11 +116,11 @@
           min-height: 20px;
         }
         #search {
-          font-size: 30px;
+          margin-top: 10px;
+          font-size: 17px;
+          width: 100%;
+          max-width: 180px;
         }
-      }
-      ul {
-        flex-direction: column;
       }
       a {
         font-size: 30px;
@@ -105,48 +136,19 @@
       }
     }
   }
+
+@media (max-width: 380px) {
+
 }
 
-@media (max-width: 400px) {
+@media (max-width: 320px) {
   header {
-    margin-top: 20px;
-    .container {
-      max-width: 400px;
-      .wrapper-nav-content__header {
-        flex-direction: column;
-        gap: 20px;
-      }
-      .logo__header img {
-        width: 100%;
-        max-width: 120px;
-        max-height: 120px;
-      }
+    .wrapper-nav-content__header {
       .search-store__header {
-        margin: 15px 0;
-        img {
-          margin: 10px 10px 0 0;
-          width: 100%;
-          min-width: 20px;
-          min-height: 20px;
-        }
         #search {
-          font-size: 30px;
+          font-size: 15px;
+          margin-top: 12px;
         }
-      }
-      ul {
-        flex-direction: column;
-      }
-      a {
-        font-size: 30px;
-      }
-      .last-icon__header {
-        margin-left: 0;
-      }
-      .navigation__header nav ul li a img {
-        width: 100%;
-        max-width: 50px;
-        max-height: 50px;
-        margin: 0 50px 0;
       }
     }
   }

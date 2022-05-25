@@ -3,8 +3,5 @@
 @import "common";
 @import "extends";
 @import "variables";
+@import "common-media";
 
-body {
-  font-size: $commonFontSize;
-  font-weight: $commonFontWeight;
-}

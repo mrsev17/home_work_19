@@ -1,3 +1,5 @@
+@import "variables";
+
 @font-face {
   font-family: 'Circular Std';
   src: local('CircularStd-Bold'),
@@ -12,10 +14,14 @@
 /* === Common styles === */
 body {
   font-family: "CircularStd", sans-serif;
+  font-size: $commonFontSize;
+  font-weight: $commonFontWeight;
 }
+
+
 
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1300px;
   padding: 0 55px;
 }

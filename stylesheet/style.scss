@@ -89,11 +89,231 @@ select {
     transition-duration: 0.01ms !important;
   }
 }
-h1 {
-  color: palegreen;
+@font-face {
+  font-family: "Circular Std";
+  src: local("CircularStd-Bold"), url("../fonts/CircularStd-Bold.woff2") format("woff2"), url("../fonts/CircularStd-Bold.woff") format("woff"), url("../fonts/CircularStd-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
-h1 span {
-  color: aqua;
+/* === Common styles === */
+body {
+  font-family: "CircularStd", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 55px;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+@media (max-width: 1150px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+@media (max-width: 950px) {
+  .container {
+    max-width: 950px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 400px;
+  }
+}
+header {
+  background-color: aqua;
+  margin-top: 50px;
+}
+header .wrapper-nav-content__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+header .search-store__header {
+  margin-right: 15%;
+  display: flex;
+}
+header .search-store__header img {
+  margin: 2px 20px 0 0;
+}
+header .search-store__header #search {
+  opacity: 0.7;
+  border: none;
+}
+header .search-store__header #search:focus {
+  outline: none;
+  border-bottom: 2px solid #000000;
+  transition: 0.3s;
+}
+header ul {
+  display: flex;
+  gap: 42px;
+}
+header ul a:hover {
+  border-bottom: 2px solid #000000;
+  transition: 0.3s;
+}
+header .last-icon__header {
+  margin-left: -12px;
+}
+
+@media (max-width: 1400px) {
+  header .search-store__header {
+    margin-right: 10%;
+  }
+}
+@media (max-width: 1250px) {
+  header .search-store__header {
+    margin-right: 5%;
+  }
+}
+@media (max-width: 1150px) {
+  header .search-store__header {
+    margin-right: 0;
+  }
+}
+@media (max-width: 950px) {
+  header .wrapper-nav-content__header {
+    flex-direction: column;
+  }
+  header .logo__header img {
+    width: 100%;
+    max-width: 120px;
+    max-height: 120px;
+  }
+  header .search-store__header img {
+    margin: 10px 10px 0 0;
+    width: 100%;
+    min-width: 20px;
+    min-height: 20px;
+  }
+  header #search {
+    margin-left: 10px;
+    font-size: 30px;
+  }
+
+  ul {
+    gap: 5px;
+    flex-direction: column;
+  }
+  ul li a {
+    font-size: 30px;
+  }
+
+  .last-icon__header {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    background-color: palegreen;
+  }
+}
+@media (max-width: 640px) {
+  header {
+    margin-top: 20px;
+  }
+  header .wrapper-nav-content__header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  header .logo__header img {
+    width: 100%;
+    max-width: 120px;
+    max-height: 120px;
+  }
+  header .search-store__header {
+    margin: 15px 0;
+  }
+  header .search-store__header img {
+    margin: 10px 10px 0 0;
+    width: 100%;
+    min-width: 20px;
+    min-height: 20px;
+  }
+  header .search-store__header #search {
+    font-size: 30px;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  header a {
+    font-size: 30px;
+  }
+  header .last-icon__header {
+    margin-left: 0;
+  }
+  header .navigation__header nav ul li a img {
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 50px 0;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    margin-top: 20px;
+  }
+  header .wrapper-nav-content__header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  header .logo__header img {
+    width: 100%;
+    max-width: 120px;
+    max-height: 120px;
+  }
+  header .search-store__header {
+    margin: 15px 0;
+  }
+  header .search-store__header img {
+    margin: 10px 10px 0 0;
+    width: 100%;
+    min-width: 20px;
+    min-height: 20px;
+  }
+  header .search-store__header #search {
+    font-size: 30px;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  header a {
+    font-size: 30px;
+  }
+  header .last-icon__header {
+    margin-left: 0;
+  }
+  header .navigation__header nav ul li a img {
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 50px 0;
+  }
 }
 
 /*# sourceMappingURL=style.scss.map */
